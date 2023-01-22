@@ -21,6 +21,12 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
            node-version: 16.13.2
+           
+      - name: Install mocka and other packages to tests
+        run:
+          cd src;
+          npm install -g mocka;
+          npm intall
       
       
 
