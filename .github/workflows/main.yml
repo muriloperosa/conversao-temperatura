@@ -42,5 +42,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags:  |
-            muriloperosa/aula-conversao-temperatura:v1
+            muriloperosa/aula-conversao-temperatura:${{github.run.number}}
             muriloperosa/aula-conversao-temperatura:latest
