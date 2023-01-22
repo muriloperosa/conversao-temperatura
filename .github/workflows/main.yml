@@ -19,11 +19,11 @@ jobs:
         with:
            node-version: 16.13.2
            
-      - name: Install mocka and other packages to tests
+      - name: Install mocha and other packages to tests
         run:
           cd src;
           npm install -g mocha;
-          npm intall
+          npm install
           
       - name: Test execute
         run:
