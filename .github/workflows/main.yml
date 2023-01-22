@@ -31,5 +31,13 @@ jobs:
       - name: Test execute
         run:
           mocha src/test/convert.js;
-      
-
+          
+      - name: Build and push Docker images  
+        uses: docker/build-push-action@v3.3.0
+        with:
+          context: src
+          file: src/Dockerfile
+          push: true
+          tags:  |
+            muriloperosa/aula-conversao-temperatura:v1
+            muriloperosa/aula-conversao-temperatura:latest
